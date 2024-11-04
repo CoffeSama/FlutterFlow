@@ -228,38 +228,6 @@ class _FormulariosWidgetState extends State<FormulariosWidget> {
                                                                 ),
                                                       ),
                                                     ),
-                                                    Text(
-                                                      '125.50 Bs',
-                                                      style: FlutterFlowTheme
-                                                              .of(context)
-                                                          .bodySmall
-                                                          .override(
-                                                            fontFamily: 'Inter',
-                                                            letterSpacing: 0.0,
-                                                          ),
-                                                    ),
-                                                    Padding(
-                                                      padding:
-                                                          const EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  0.0,
-                                                                  8.0,
-                                                                  0.0,
-                                                                  0.0),
-                                                      child: Text(
-                                                        'Quanity: 1',
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .labelMedium
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Inter',
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                ),
-                                                      ),
-                                                    ),
                                                   ],
                                                 ),
                                               ),
@@ -273,21 +241,6 @@ class _FormulariosWidgetState extends State<FormulariosWidget> {
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondaryText,
-                                                  size: 20.0,
-                                                ),
-                                                onPressed: () {
-                                                  print(
-                                                      'IconButton pressed ...');
-                                                },
-                                              ),
-                                              FlutterFlowIconButton(
-                                                borderColor: Colors.transparent,
-                                                borderRadius: 30.0,
-                                                borderWidth: 1.0,
-                                                buttonSize: 40.0,
-                                                icon: const Icon(
-                                                  Icons.delete_outline_rounded,
-                                                  color: Color(0xFFE86969),
                                                   size: 20.0,
                                                 ),
                                                 onPressed: () {

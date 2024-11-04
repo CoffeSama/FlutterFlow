@@ -1,5 +1,4 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'nav_bar1_model.dart';
@@ -86,93 +85,71 @@ class _NavBar1WidgetState extends State<NavBar1Widget> {
               ),
             ],
           ),
-          Row(
-            mainAxisSize: MainAxisSize.max,
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.end,
-            children: [
-              FlutterFlowIconButton(
-                borderColor: Colors.transparent,
-                borderRadius: 30.0,
-                borderWidth: 1.0,
-                buttonSize: 50.0,
-                fillColor: Colors.white,
-                icon: const Icon(
-                  Icons.home_rounded,
-                  color: Color(0xFF9299A1),
-                  size: 24.0,
-                ),
-                onPressed: () async {
-                  context.pushNamed('HomePage');
-                },
-              ),
-              FlutterFlowIconButton(
-                borderRadius: 30.0,
-                buttonSize: 50.0,
-                fillColor: Colors.white,
-                icon: const Icon(
-                  Icons.person,
-                  color: Color(0xFF9299A1),
-                  size: 24.0,
-                ),
-                onPressed: () async {
-                  context.pushNamed('Perfil');
-                },
-              ),
-              Column(
-                mainAxisSize: MainAxisSize.min,
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
-                    child: FlutterFlowIconButton(
-                      borderColor: Colors.transparent,
-                      borderRadius: 25.0,
-                      borderWidth: 1.0,
-                      buttonSize: 60.0,
-                      fillColor: FlutterFlowTheme.of(context).primary,
-                      icon: const Icon(
-                        Icons.add,
-                        color: Colors.white,
-                        size: 30.0,
-                      ),
-                      onPressed: () async {
-                        context.pushNamed('Formularios');
-                      },
-                    ),
+          Padding(
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 0.0),
+            child: Row(
+              mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                FlutterFlowIconButton(
+                  borderColor: Colors.transparent,
+                  borderRadius: 30.0,
+                  borderWidth: 1.0,
+                  buttonSize: 50.0,
+                  fillColor: Colors.white,
+                  icon: const Icon(
+                    Icons.home_rounded,
+                    color: Color(0xFF9299A1),
+                    size: 24.0,
                   ),
-                ],
-              ),
-              FlutterFlowIconButton(
-                borderRadius: 30.0,
-                buttonSize: 50.0,
-                fillColor: Colors.white,
-                icon: const Icon(
-                  Icons.notifications_sharp,
-                  color: Color(0xFF9299A1),
-                  size: 24.0,
+                  onPressed: () async {
+                    context.pushNamed('HomePage');
+                  },
                 ),
-                onPressed: () {
-                  print('IconButton pressed ...');
-                },
-              ),
-              FlutterFlowIconButton(
-                borderColor: Colors.transparent,
-                borderRadius: 30.0,
-                borderWidth: 1.0,
-                buttonSize: 50.0,
-                fillColor: Colors.white,
-                icon: const Icon(
-                  Icons.shopping_cart_sharp,
-                  color: Color(0xFF9299A1),
-                  size: 24.0,
+                FlutterFlowIconButton(
+                  borderRadius: 30.0,
+                  buttonSize: 50.0,
+                  fillColor: Colors.white,
+                  icon: const Icon(
+                    Icons.person,
+                    color: Color(0xFF9299A1),
+                    size: 24.0,
+                  ),
+                  onPressed: () async {
+                    context.pushNamed('Perfil');
+                  },
                 ),
-                onPressed: () async {
-                  context.pushNamed('Carrito');
-                },
-              ),
-            ],
+                FlutterFlowIconButton(
+                  borderRadius: 30.0,
+                  buttonSize: 50.0,
+                  fillColor: Colors.white,
+                  icon: const Icon(
+                    Icons.add,
+                    color: Color(0xFF9299A1),
+                    size: 24.0,
+                  ),
+                  onPressed: () async {
+                    context.pushNamed('Formularios');
+                  },
+                ),
+                FlutterFlowIconButton(
+                  borderColor: Colors.transparent,
+                  borderRadius: 30.0,
+                  borderWidth: 1.0,
+                  buttonSize: 50.0,
+                  fillColor: Colors.white,
+                  icon: const Icon(
+                    Icons.shopping_cart_sharp,
+                    color: Color(0xFF9299A1),
+                    size: 24.0,
+                  ),
+                  onPressed: () async {
+                    context.pushNamed('Carrito');
+                  },
+                ),
+              ],
+            ),
           ),
         ],
       ),
