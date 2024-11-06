@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'inicio_model.dart';
 export 'inicio_model.dart';
 
@@ -20,6 +21,11 @@ class _InicioWidgetState extends State<InicioWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => InicioModel());
+
+    // On page load action.
+    SchedulerBinding.instance.addPostFrameCallback((_) async {
+      context.pushNamed('GetStarted');
+    });
   }
 
   @override

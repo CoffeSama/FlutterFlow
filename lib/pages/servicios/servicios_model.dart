@@ -22,22 +22,6 @@ class ServiciosModel extends FlutterFlowModel<ServiciosWidget> {
   FocusNode? textFieldFocusNode4;
   TextEditingController? textController4;
   String? Function(BuildContext, String?)? textController4Validator;
-  // State field(s) for TextField widget.
-  FocusNode? textFieldFocusNode5;
-  TextEditingController? textController5;
-  String? Function(BuildContext, String?)? textController5Validator;
-  // State field(s) for TextField widget.
-  FocusNode? textFieldFocusNode6;
-  TextEditingController? textController6;
-  String? Function(BuildContext, String?)? textController6Validator;
-  // State field(s) for TextField widget.
-  FocusNode? textFieldFocusNode7;
-  TextEditingController? textController7;
-  String? Function(BuildContext, String?)? textController7Validator;
-  // State field(s) for TextField widget.
-  FocusNode? textFieldFocusNode8;
-  TextEditingController? textController8;
-  String? Function(BuildContext, String?)? textController8Validator;
   // Model for NavBar1 component.
   late NavBar1Model navBar1Model;
 
@@ -59,18 +43,6 @@ class ServiciosModel extends FlutterFlowModel<ServiciosWidget> {
 
     textFieldFocusNode4?.dispose();
     textController4?.dispose();
-
-    textFieldFocusNode5?.dispose();
-    textController5?.dispose();
-
-    textFieldFocusNode6?.dispose();
-    textController6?.dispose();
-
-    textFieldFocusNode7?.dispose();
-    textController7?.dispose();
-
-    textFieldFocusNode8?.dispose();
-    textController8?.dispose();
 
     navBar1Model.dispose();
   }

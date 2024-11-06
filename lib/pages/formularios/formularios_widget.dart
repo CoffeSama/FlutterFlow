@@ -95,7 +95,7 @@ class _FormulariosWidgetState extends State<FormulariosWidget> {
                     child: Align(
                       alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Text(
-                        'Carrito de compras',
+                        'Formularios',
                         style:
                             FlutterFlowTheme.of(context).displaySmall.override(
                                   fontFamily: 'Poppins',
